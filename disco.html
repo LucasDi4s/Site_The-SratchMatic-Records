@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Scratchmatic Records</title>
+    <link rel="stylesheet" href="disco.css">
+    <link rel="icon" href="icone.ico" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <!-- Logotipo -->
+            <h3 class="logo"><img src="Logo.png" alt="logo"></h3>
+            <!-- Navegação -->
+            <nav>
+
+                <!-- Grupo de navegação à esquerda -->
+                <div class="navEsquerda navGrupo">
+                    <!-- Links -->
+                    <div class="home">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="sobre">
+                        <a href="sobre.html">Sobre</a>
+                    </div>
+                    <div class="discos">
+                        <a href="disco.html">Discos</a>
+                    </div>
+                </div>
+
+                <!-- Grupo de navegação à direita -->
+                <div class="navDireita navGrupo">
+                    <!-- Links -->
+                    <div class="noticias">
+                        <a href="noticias.html">Noticias</a>
+                    </div>
+                    <div class="catalogo">
+                        <a href="catalogo.html">Catálogo</a>
+                    </div>
+                    <div class="redes">
+                        <a href="rede.html">Redes Sociais</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção de textos -->
+    <section class="textos">
+        <div>
+            <!-- Texto descritivo -->
+            <h1 class="gradient1">C.R.E.A.M</h1>
+
+            <h4 class="gradient">Os melhores e mais exclusivos discos você só encontra aqui, as relíquias das relíquias
+                autografadas de todos os grupos de hip-hop dos anos 90 até 2000.
+                Desde os icônicos N.W.A. até os lendários Wu-Tang Clan, passando pelos inovadores Public Enemy e os
+                visionários OutKast, temos uma coleção incomparável.<br>
+                Não se esqueça dos clássicos do Tupac Shakur e The Notorious B.I.G., verdadeiras joias do rap.
+                E claro, não podemos esquecer das gravadoras que moldaram essa era dourada, como a Death Row Records, Bad
+                Boy Records, Def Jam Recordings e tantas outras que deram vida ao movimento hip-hop. Venha descobrir a
+                história através da música!</h4>
+        </div>
+    </section>
+
+    <!-- Produtos -->
+    <div class="product">
+        <!-- Título do Produto -->
+        <h2><br></h2>
+        <!-- Imagem do Produto -->
+        <img id="productImage" src="urban1.jpeg" alt="Product">
+        <!-- Seta esquerda -->
+        <div class="arrow left" onclick="changeImage(-1)">&#10094;</div>
+        <!-- Seta direita -->
+        <div class="arrow right" onclick="changeImage(1)">&#10095;</div>
+        <!-- Botão de Comprar -->
+        <button class="buy-btn">Comprar</button>
+    </div>
+    
+    <div class="product2">
+        <!-- Título do Produto -->
+        <h2 class="texto_p"><br></h2>
+        <!-- Imagem do Produto -->
+        <img id="productImage2" src="nation1.jpeg" alt="Product2">
+        <!-- Seta esquerda -->
+        <div class="arrow left" onclick="changeImage2(-1)">&#10094;</div>
+        <!-- Seta direita -->
+        <div class="arrow right" onclick="changeImage2(1)">&#10095;</div>
+        <!-- Botão de Comprar -->
+        <button class="buy-btn2">Comprar</button>
+    </div>
+
+    <div class="product3">
+        <!-- Título do Produto -->
+        <h2 class="texto_p"><br></h2>
+        <!-- Imagem do Produto -->
+        <img id="productImage3" src="spaceRap1.jpeg" alt="product3">
+        <!-- Seta esquerda -->
+        <div class="arrow left" onclick="changeImage3(-1)">&#10094;</div>
+        <!-- Seta direita -->
+        <div class="arrow right" onclick="changeImage3(1)">&#10095;</div>
+        <!-- Botão de Comprar -->
+        <button class="buy-btn3">Comprar</button>
+    </div>
+
+    <!-- Script para manipulação dos produtos -->
+    <script src="produto.js"></script>
+</body>
+</html>
