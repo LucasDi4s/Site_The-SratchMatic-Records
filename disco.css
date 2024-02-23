@@ -206,6 +206,91 @@ h4 {
     cursor: pointer;
 }
 
+.product4 {
+    margin: 0 0 0 150px;
+    position: relative;
+    display: inline-block;
+    margin-top: 50px; /* Altera a margem superior */
+}
+
+#productImage4 {
+    margin-top: -145px;
+    width: 300px; /* Altera a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.change-btn4, .buy-btn4{
+    font-family: demos; /* Define a fonte do título */
+    display: block; /* Torna os botões em blocos */
+    margin: 10px auto; /* Centraliza os botões */
+    padding: 10px 20px; /* Adiciona padding aos botões */
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product5 {
+    margin: 0 0 0 150px;
+    position: relative;
+    display: inline-block;
+    margin-top: 50px; /* Altera a margem superior */
+}
+
+#productImage5 {
+    margin-top: -145px;
+    width: 300px; /* Altera a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.change-btn5, .buy-btn5{
+    font-family: demos; /* Define a fonte do título */
+    display: block; /* Torna os botões em blocos */
+    margin: 10px auto; /* Centraliza os botões */
+    padding: 10px 20px; /* Adiciona padding aos botões */
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.product6 {
+    margin: 0 0 0 150px;
+    position: relative;
+    display: inline-block;
+    margin-top: 50px; /* Altera a margem superior */
+}
+
+#productImage6 {
+    margin-top: -145px;
+    width: 300px; /* Altera a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.change-btn6, .buy-btn6{
+    font-family: demos; /* Define a fonte do título */
+    display: block; /* Torna os botões em blocos */
+    margin: 10px auto; /* Centraliza os botões */
+    padding: 10px 20px; /* Adiciona padding aos botões */
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ------------------ Estilos para a seta de navegação ------------------ */
 .arrow {
     position: absolute; /* Posição absoluta */
@@ -227,4 +312,21 @@ h4 {
 .arrow.right {
     right: -30px; /* Posiciona à direita da área pai */
 }
+
+ /*---------------------- Estilização do fim da Pagina ---------------------- */
+
+
+footer {
+    font-family: demos; /* Define a fonte do título */
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Gradiente linear */
+    text-align: center;
+    margin: auto;
+    height: 80px; /* Defina a altura desejada aqui */
+    padding: 20px; /* Adiciona preenchimento interno para aumentar o espaço ao redor do conteúdo */
+}
+
+
+
+
+
 
