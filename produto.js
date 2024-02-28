@@ -8,7 +8,7 @@ function changeImage(indexChange) {
     if (currentIndex < 1) {
         currentIndex = 2; // Se for menor que 1, volta para o último
     } else if (currentIndex > 2) {
-        currentIndex = 1; // Se for maior que 4, volta para o primeiro
+        currentIndex = 1; // Se for maior que 2, volta para o primeiro
     }
 
     img.src = "urban" + currentIndex + ".jpeg";

@@ -139,6 +139,17 @@ h4 {
     margin-top: 50px; /* Altera a margem superior */
 }
 
+
+
+.descritivo{
+color: white;
+
+
+
+}
+
+
+
 #productImage {
     margin-top: -145px;
     width: 300px; /* Altera a largura da imagem */
@@ -279,18 +290,6 @@ h4 {
     cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------ Estilos para a seta de navegação ------------------ */
 .arrow {
     position: absolute; /* Posição absoluta */
@@ -313,9 +312,13 @@ h4 {
     right: -30px; /* Posiciona à direita da área pai */
 }
 
+
+
+
+
+
+
  /*---------------------- Estilização do fim da Pagina ---------------------- */
-
-
 footer {
     font-family: demos; /* Define a fonte do título */
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Gradiente linear */
@@ -325,7 +328,36 @@ footer {
     padding: 20px; /* Adiciona preenchimento interno para aumentar o espaço ao redor do conteúdo */
 }
 
+.iconegit img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 25px;
+    margin-top: -70px;
+    left: 1500px;
+}
 
+
+.iconelinkedin img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 25px;
+    margin-top: -70px;
+    left: 1400px;
+}
+
+.iconeinstagram img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 39px;
+    margin-top: -69px;
+    left: 1300px;
+}
 
 
 

@@ -125,10 +125,99 @@ h1 {
     background-clip: text;
 }
 
-/* -------------------- Estilizando elementos adicionais ----------------------- */
-.fundo1 {
-    background-position: center center; /* Centraliza a imagem de fundo horizontal e verticalmente */
-    margin-left: 35px;
-    margin-top: -100px;
+/* -------------------- Estilizando elementos adicionais do ----------------------- */
+ul {
+    display: flex; /* Define que a lista <ul> será exibida como um flex container */
+    list-style: none; /* Remove os marcadores de lista padrão */
+    transition: all 1s ease; /* Adiciona uma transição suave de 1 segundo para todas as propriedades */
 }
 
+.slider {
+    width: 450px; /* Define a largura do slider */
+    height: 400px; /* Define a altura do slider */
+    overflow:hidden;
+    border-radius: 3px; /* Adiciona bordas arredondadas ao slider */
+    margin-left: 500px; /* Define uma margem à esquerda */
+}
+
+.image1 {
+    width: 410px; /* Define a largura da imagem */
+    height: 300px; /* Define a altura da imagem */
+    border-radius: 3px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.image2 {
+    width: 450px; /* Define a largura da imagem */
+    height: 300px; /* Define a altura da imagem */
+    border-radius: 3px; /* Adiciona bordas arredondadas à imagem */
+}
+
+.image3 {
+    width: 445px; /* Define a largura da imagem */
+    height: 300px; /* Define a altura da imagem */
+    border-radius: 3px; /* Adiciona bordas arredondadas à imagem */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---------------------- Estilização do fim da Pagina ---------------------- */
+footer {
+    font-family: demos; /* Define a fonte do título */
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Gradiente linear */
+    text-align: center;
+    margin: auto;
+    height: 80px; /* Defina a altura desejada aqui */
+    padding: 20px; /* Adiciona preenchimento interno para aumentar o espaço ao redor do conteúdo */
+}
+
+.iconegit img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 25px;
+    margin-top: -70px;
+    left: 1500px;
+}
+
+
+.iconelinkedin img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 25px;
+    margin-top: -70px;
+    left: 1400px;
+}
+
+.iconeinstagram img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 39px;
+    margin-top: -69px;
+    left: 1300px;
+}

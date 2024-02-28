@@ -1,29 +1,23 @@
-/* Estilos para o corpo da página */
+/* ---------------------- Estilos para o corpo da página ---------------------- */
 body {
-    margin: -21px; /* Define uma margem negativa */
+    margin:auto; /* Define uma margem negativa */
     padding: 0%; /* Sem preenchimento */
     border: 0; /* Sem borda */
     line-height: 5; /* Altura da linha */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte */
-    background-color: black;
+    background-color: #000;
 }
 
-/* Estilos para o cabeçalho */
-header {
-    height: 98px; /* Altura fixa */
-}
 
-/* Estilos para o cabeçalho fixo */
 header {
     background-color: black; /* Cor de fundo preto */
     position: fixed; /* Posição fixa */
     top: 0; /* Fixado no topo */
-    width: 102%; /* Largura um pouco maior que a tela para evitar lacunas */
+    width: 100%; /* Largura um pouco maior que a tela para evitar lacunas */
     height: 125px; /* Altura fixa */
     z-index: 100; /* Sobreposição */
 }
-
-/* Estilos para o logotipo */
+/* --------------------- Estilos para o logotipo ---------------------------- */
 .logo {
     position: absolute; /* Posição absoluta */
     left: 0; /* Alinhado à esquerda */
@@ -34,12 +28,13 @@ header {
     top: 0px; /* Alinhado ao topo */
 }
 
-/* Estilos para a imagem do logotipo */
+/* ------------------ Estilos para a imagem do logotipo ---------------------- */
 header .logo img {
     transition: all 0.3s linear; /* Transição suave */
     max-width: 100%; /* Largura máxima */
 }
 
+/* ------------------ Estilização dos links de navegação --------------------- */
 /* Estilos para a navegação */
 header nav {
     display: flex; /* Exibição flexível */
@@ -48,7 +43,6 @@ header nav {
     transition: all 0.3s linear; /* Transição suave */
 }
 
-/* Estilos para os links de navegação */
 nav a {
     text-transform: uppercase; /* Transformação em maiúsculas */
     color: #C5B58C; /* Cor do texto */
@@ -99,29 +93,105 @@ header nav .navGrupo.navDireita .redes {
 }
 
 
-/*------------------ ESTILIZAÇÃO DO BANNER  ------------------*/
-
+/* ------------------- Estilizando o banner principal ------------------------- */
 .banner {
-    position: relative; /* Define o posicionamento relativo para que possamos posicionar absolutamente o texto dentro dele */
-    margin-top: 125px;
+    position: relative; /* Adiciona posicionamento relativo ao banner */
+    height: 750px; /* Define a altura do banner como 390 pixels */
+    margin-top: -300px;
+    margin-left: 200px;
 }
 
-.banner img {
-    height: 345px;
-    width: 100%;
-    display: block;
+/* ---------------- Estilizando um texto com gradiente ------------------------ */
+.gradient {
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Define um gradiente linear */
+    -webkit-text-fill-color: transparent; /* Faz com que o texto seja transparente para que o gradiente seja visível */
+    background-clip: text;
 }
 
-.text_banner {
-    position: absolute; /* Define o posicionamento absoluto */
-    top: 26%; /* Coloca o topo do texto no meio do banner */
-    left: 50%; /* Coloca o lado esquerdo do texto no meio do banner */
-    transform: translate(-50%, -50%); /* Move o texto de volta em 50% do seu próprio tamanho para centralizá-lo */
+/* ------------------- Estilizando o título do banner ------------------------- */
+h1 {
+    position: absolute; /* Adiciona posicionamento absoluto ao título */
     font-family: demos; /* Define a fonte do título */
     font-size: 68px; /* Define o tamanho da fonte do título */
     letter-spacing: 0.65px; /* Define o espaçamento entre as letras do título */
-    color: transparent; /* Torna o texto transparente */
-    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Define um gradiente linear */
-    -webkit-background-clip: text; /* Faz com que o gradiente seja visível apenas no texto */
-    background-clip: text;
-}/*------------------ ESTILIZAÇÃO DO BANNER  ------------------*/
+    line-height: 200%; /* Define a altura da linha como 200% para melhor legibilidade */
+    top: 50%; /* Move o título para o centro vertical */
+    left: 50%; /* Move o título para o centro horizontal */
+    transform: translate(-50%, -50%); /* Centraliza o título completamente */
+    margin-top: 200px;
+}
+
+/* -------------------- Estilizando elementos adicionais ----------------------- */
+.banner1 {
+    background-position: center center; /* Centraliza a imagem de fundo horizontal e verticalmente */
+    margin-left: 35px;
+    margin-top: -100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /*---------------------- Estilização do fim da Pagina ---------------------- */
+ footer {
+    font-family: demos; /* Define a fonte do título */
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Gradiente linear */
+    text-align: center;
+    margin: auto;
+    height: 80px; /* Defina a altura desejada aqui */
+    padding: 20px; /* Adiciona preenchimento interno para aumentar o espaço ao redor do conteúdo */
+}
+
+.iconegit img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 25px;
+    margin-top: -70px;
+    left: 1500px;
+}
+
+
+.iconelinkedin img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 25px;
+    margin-top: -70px;
+    left: 1400px;
+}
+
+.iconeinstagram img{
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    width: 39px;
+    margin-top: -69px;
+    left: 1300px;
+}
