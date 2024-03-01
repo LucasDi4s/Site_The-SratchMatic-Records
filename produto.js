@@ -28,7 +28,7 @@ function changeImage2(indexChange) {
     img.src = "nation" + currentIndex + ".jpeg";
 }
 
-  
+
 function changeImage3(indexChange) {
     var img = document.getElementById("productImage3");
 

@@ -34,4 +34,4 @@ function startSlider() {
 // Define um intervalo para chamar a função startSlider a cada 3000 milissegundos (3 segundos)
 setInterval(() => {
   startSlider();
-}, 2000);
+}, 3000);

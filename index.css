@@ -94,29 +94,107 @@ header nav .navGrupo.navDireita .redes {
 }
 
 
-.texto_banner{
-    font-family: demos; /* Define a fonte do título */
-    font-size: 50px; /* Define o tamanho da fonte do título */
+/* ------------------- Estilizando o título  ------------------------- */
+h1 {
+    font-family: demos;/* Define a fonte do título */
+    font-size: 68px;/* Define o tamanho da fonte do título */
     letter-spacing: 0.65px;/* Define o espaçamento entre as letras do título */
     line-height: 200%;/* Define a altura da linha como 200% para melhor legibilidade */
-    margin-top: 10%; /* Define a margem superior */
     text-align: center;
-    margin: 15%;
+    margin-top: 150px;
 }
 
-/* ------------------ Estilos para a gradiente de Titulo ------------------ */
+/* ---------------- Estilizando um texto com gradiente ------------------------ */
 .gradient {
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);/* Define um gradiente linear */
     -webkit-text-fill-color: transparent;/* Faz com que o texto seja transparente para que o gradiente seja visível */
     background-clip: text;
 }
 
-.texto{
-    color: white;
-    margin: 25%;
-    margin-top: -8%;
-    text-align:left;
-    font-size: 100%; /* Define o tamanho da fonte do título */
-    letter-spacing: 0.65px;/* Define o espaçamento entre as letras do título */
-    line-height: 200%;/* Define a altura da linha como 200% para melhor legibilidade */
+/* -------------------- Estilizando elementos adicionais do ----------------------- */
+ul {
+    display: flex; /* Define que a lista <ul> será exibida como um flex container */
+    list-style: none; /* Remove os marcadores de lista padrão */
+    transition: all 1s ease;/* Adiciona uma transição suave de 1 segundo para todas as propriedades */
+}
+
+.slider {
+    width: 450px; /* Define a largura do slider */
+    height: 400px;/* Define a altura do slider */
+    overflow: hidden;
+    border-radius: 3px;/* Adiciona bordas arredondadas ao slider */
+    margin-left: 35%;/* Define uma margem à esquerda */
+}
+
+.image1 {
+    width: 410px;/* Define a largura da imagem */
+    height: 300px;/* Define a altura da imagem */
+    border-radius: 3px;/* Adiciona bordas arredondadas à imagem */
+}
+
+.image2 {
+    width: 450px;/* Define a largura da imagem */
+    height: 300px;/* Define a altura da imagem */
+    border-radius: 3px;/* Adiciona bordas arredondadas à imagem */
+}
+
+.image3 {
+    width: 445px;/* Define a largura da imagem */
+    height: 300px;/* Define a altura da imagem */
+    border-radius: 3px;/* Adiciona bordas arredondadas à imagem */
+}
+
+
+/*---------------------- Estilização do fim da Pagina ---------------------- */
+footer {
+    font-family: demos; /* Define a fonte do título */
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);/* Gradiente linear */
+    text-align: center;
+    margin: auto;
+    height: 80px;/* Defina a altura desejada aqui */
+    padding: 20px;
+    /* Adiciona preenchimento interno para aumentar o espaço ao redor do conteúdo */
+}
+
+.iconegit img {
+    position: absolute;
+    /* Posição absoluta */
+    left: 0;
+    /* Alinhado à esquerda */
+    right: 55px;
+    /* Distância à direita */
+    margin: 0 auto;
+    /* Margem automática */
+    width: 25px;
+    margin-top: -70px;
+    left: 1500px;
+}
+
+
+.iconelinkedin img {
+    position: absolute;
+    /* Posição absoluta */
+    left: 0;
+    /* Alinhado à esquerda */
+    right: 55px;
+    /* Distância à direita */
+    margin: 0 auto;
+    /* Margem automática */
+    width: 25px;
+    margin-top: -70px;
+    left: 1400px;
+}
+
+.iconeinstagram img {
+    position: absolute;
+    /* Posição absoluta */
+    left: 0;
+    /* Alinhado à esquerda */
+    right: 55px;
+    /* Distância à direita */
+    margin: 0 auto;
+    /* Margem automática */
+    width: 39px;
+    margin-top: -69px;
+    left: 1300px;
 }

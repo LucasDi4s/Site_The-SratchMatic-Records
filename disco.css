@@ -1,166 +1,157 @@
-/* ------------------ Estilos para o corpo da página ------------------ */
+/* ---------------------- Estilos para o corpo da página ---------------------- */
 body {
-    margin:auto; /* Define uma margem negativa */
-    padding: 0%; /* Sem preenchimento */
-    border: 0; /* Sem borda */
+    margin: 0; /* Define uma margem negativa */
+    padding: 0;/* Sem preenchimento */
     line-height: 5; /* Altura da linha */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte */
     background-color: #000;
 }
 
-/* ------------------ Estilos para o cabeçalho fixo ------------------ */
+/* --------------------- Estilos para o cabeçalho fixo ---------------------- */
 header {
-    position: fixed; /* Posição fixa */
-    top: 0; /* Fixado no topo */
-    width: 100%; /* Largura um pouco maior que a tela para evitar lacunas */
-    height: 125px; /* Altura fixa */
-    z-index: 100; /* Sobreposição */
-    background-color: #000;
+    background-color: rgb(0, 0, 0);/* Cor de fundo preto */
+    position: fixed;/* Posição fixa */
+    top: 0;/* Fixado no topo */
+    width: 100%;/* Largura um pouco maior que a tela para evitar lacunas */
+    height: 15%;/* Altura fixa */
+    z-index: 100;/* Sobreposição */
 }
 
-/* ------------------ Estilos para o logotipo ------------------ */
+/* --------------------- Estilos para o logotipo ---------------------------- */
 .logo {
-    position: absolute; /* Posição absoluta */
-    left: 0; /* Alinhado à esquerda */
-    right: 55px; /* Distância à direita */
+    position: absolute;/* Posição absoluta */
+    left: 0;/* Alinhado à esquerda */
+    right: 1%;/* Distância à direita */
     margin: 0 auto; /* Margem automática */
-    transition: all 0.3s linear; /* Transição suave */
-    width: 200px; /* Largura fixa */
-    top: 0px; /* Alinhado ao topo */
+    transition: all 0.3s linear;/* Transição suave */
+    width: 13%;/* Largura fixa */
+    top: 5%;/* Alinhado ao topo */
 }
 
-/* ------------------ Estilos para a imagem do logotipo ------------------ */
+/* ------------------ Estilos para a imagem do logotipo ---------------------- */
 header .logo img {
     transition: all 0.3s linear; /* Transição suave */
     max-width: 100%; /* Largura máxima */
 }
 
-/* ------------------ Estilização dos links de navegação ------------------ */
+/* ------------------ Estilização dos links de navegação --------------------- */
 /* Estilos para a navegação */
 header nav {
-    display: flex; /* Exibição flexível */
-    justify-content: space-between; /* Espaçamento entre os itens */
-    margin-top: 28px; /* Margem superior */
-    transition: all 0.3s linear; /* Transição suave */
+    display: flex;/* Exibição flexível */
+    justify-content: space-between;/* Espaçamento entre os itens */
+    margin-top: 28px;/* Margem superior */
+    transition: all 0.3s linear;/* Transição suave */
 }
 
 nav a {
-    text-transform: uppercase; /* Transformação em maiúsculas */
-    color: #C5B58C; /* Cor do texto */
-    font-weight: bold; /* Peso da fonte em negrito */
-    font-size: 16px; /* Tamanho da fonte */
-    text-decoration: none; /* Sem decoração de texto */
+    text-transform: uppercase;/* Transformação em maiúsculas */
+    color: #C5B58C;/* Cor do texto */
+    font-weight: bold;/* Peso da fonte em negrito */
+    font-size: 16px;/* Tamanho da fonte */
+    text-decoration: none;/* Sem decoração de texto */
 }
 
 /* Estilos para o grupo de navegação à esquerda */
 header nav .navGrupo.navEsquerda {
-    justify-content: flex-start; /* Alinhamento à esquerda */
+    justify-content: flex-start;/* Alinhamento à esquerda */
 }
 
 /* Estilos para os grupos de navegação */
 header nav .navGrupo {
-    display: flex; /* Exibição flexível */
+    display: flex;/* Exibição flexível */
 }
 
 /* Estilos para os links específicos no grupo de navegação à esquerda */
 header nav .navGrupo.navEsquerda .home {
-    margin-left: 250px; /* Margem à esquerda */
+    margin-left: 150%;/* Margem à esquerda */
 }
 
 header nav .navGrupo.navEsquerda .sobre {
-    margin-left: 100px; /* Margem à esquerda */
+    margin-left: 50%;/* Margem à esquerda */
 }
 
 header nav .navGrupo.navEsquerda .discos {
-    margin-left: 100px; /* Margem à esquerda */
+    margin-left: 50%;/* Margem à esquerda */
 }
+
 
 /* Estilos para o grupo de navegação à direita */
 header nav .navGrupo.navDireita {
-    justify-content: flex-start; /* Alinhamento à esquerda */
+    justify-content: flex-end;/* Alinhamento à esquerda */
 }
 
 /* Estilos para os links específicos no grupo de navegação à direita */
 header nav .navGrupo.navDireita .noticias {
-    margin-right: 100px; /* Margem à direita */
+    margin-right: 35%;/* Margem à direita */
 }
 
 header nav .navGrupo.navDireita .catalogo {
-    margin-right: 100px; /* Margem à direita */
+    margin-right: 35%;/* Margem à direita */
 }
 
 header nav .navGrupo.navDireita .redes {
-    margin-right: 250px; /* Margem à direita */
+    margin-right: 100%; /* Margem à direita */
 }
-/*------------------ Estilização dos links de navegação ------------------*/
+
 
 
 /* ------------------ Estilos para o Titulo ------------------ */
-h1{
-    font-family: demos; /* Define a fonte do título */
-    font-size: 68px; /* Define o tamanho da fonte do título */
-    letter-spacing: 0.65px; /* Define o espaçamento entre as letras do título */
-    line-height: 120%; /* Define a altura da linha como 200% para melhor legibilidade */
-    margin-left: 595px; /* Define a margem esquerda */
-    margin-top: 225px; /* Define a margem superior */
+h1 {
+    font-family: demos;/* Define a fonte do título */
+    font-size: 68px;/* Define o tamanho da fonte do título */
+    letter-spacing: 0.65px;/* Define o espaçamento entre as letras do título */
+    line-height: 120%;/* Define a altura da linha como 200% para melhor legibilidade */
+    margin-top: 225px;/* Define a margem superior */
+    text-align: center;
 }
 
 
 /* ------------------ Estilos para a gradiente de Titulo ------------------ */
-.gradient1 {
-    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Define um gradiente linear */
-    -webkit-text-fill-color: transparent; /* Faz com que o texto seja transparente para que o gradiente seja visível */
+.gradient {
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);/* Define um gradiente linear */
+    -webkit-text-fill-color: transparent;/* Faz com que o texto seja transparente para que o gradiente seja visível */
     background-clip: text;
 }
 
 
 /* ------------------ Estilos para o texto ------------------ */
-h4 {
-    font-family: demos; /* Define a fonte do título */
-    font-size: 26px; /* Define o tamanho da fonte do título */
-    letter-spacing: 0.65px; /* Define o espaçamento entre as letras do título */
-    line-height: 120%; /* Define a altura da linha como 200% para melhor legibilidade */
-    margin-left: 50px; /* Define a margem esquerda */
-    margin-top: 120px; /* Define a margem superior */
-}
-/* ------------------ Estilos para a gradiente de texto ------------------ */
-.gradient {
-    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Define um gradiente linear */
-    -webkit-text-fill-color: transparent; /* Faz com que o texto seja transparente para que o gradiente seja visível */
-    background-clip: text;
+h6 {
+    color: white;
+    text-align:center;
+    font-size: 100%; /* Define o tamanho da fonte do título */
+    letter-spacing: 0.65px;/* Define o espaçamento entre as letras do título */
+    line-height: 100%;/* Define a altura da linha como 200% para melhor legibilidade */
 }
 
 
 /* ------------------ Estilos para o produto ------------------ */
 .product {
     margin: 0 0 0 150px;
+    margin-top: -45%;
     position: relative;
     display: inline-block;
-    margin-top: 50px; /* Altera a margem superior */
 }
 
 
 
-.descritivo{
-color: white;
-
-
-
+.descritivo {
+    color: white;
 }
 
 
 
 #productImage {
     margin-top: -145px;
-    width: 300px; /* Altera a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 300px;/* Altera a largura da imagem */
+    height: auto;/* Mantém a proporção da imagem */
 }
 
-.change-btn, .buy-btn {
-    font-family: demos; /* Define a fonte do título */
-    display: block; /* Torna os botões em blocos */
-    margin: 10px auto; /* Centraliza os botões */
-    padding: 10px 20px; /* Adiciona padding aos botões */
+.change-btn,
+.buy-btn {
+    font-family: demos;/* Define a fonte do título */
+    display: block;/* Torna os botões em blocos */
+    margin: 10px auto;/* Centraliza os botões */
+    padding: 10px 20px;/* Adiciona padding aos botões */
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
     border: none;
     border-radius: 5px;
@@ -172,20 +163,22 @@ color: white;
     margin: 0 0 0 150px;
     position: relative;
     display: inline-block;
-    margin-top: 50px; /* Altera a margem superior */
+    margin-top: 50px;
+    /* Altera a margem superior */
 }
 
 #productImage2 {
     margin-top: -145px;
-    width: 300px; /* Altera a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 300px;/* Altera a largura da imagem */
+    height: auto;/* Mantém a proporção da imagem */
 }
 
-.change-btn2, .buy-btn2 {
-    font-family: demos; /* Define a fonte do título */
-    display: block; /* Torna os botões em blocos */
-    margin: 10px auto; /* Centraliza os botões */
-    padding: 10px 20px; /* Adiciona padding aos botões */
+.change-btn2,
+.buy-btn2 {
+    font-family: demos;/* Define a fonte do título */
+    display: block;/* Torna os botões em blocos */
+    margin: 10px auto;/* Centraliza os botões */
+    padding: 10px 20px;/* Adiciona padding aos botões */
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
     border: none;
     border-radius: 5px;
@@ -197,19 +190,21 @@ color: white;
     margin: 0 0 0 150px;
     position: relative;
     display: inline-block;
-    margin-top: 50px; /* Altera a margem superior */
+    margin-top: 50px;
+    /* Altera a margem superior */
 }
 
 #productImage3 {
     margin-top: -145px;
     width: 300px; /* Altera a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;/* Mantém a proporção da imagem */
 }
 
-.change-btn3, .buy-btn3 {
-    font-family: demos; /* Define a fonte do título */
-    display: block; /* Torna os botões em blocos */
-    margin: 10px auto; /* Centraliza os botões */
+.change-btn3,
+.buy-btn3 {
+    font-family: demos;/* Define a fonte do título */
+    display: block;/* Torna os botões em blocos */
+    margin: 10px auto;/* Centraliza os botões */
     padding: 10px 20px; /* Adiciona padding aos botões */
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
     border: none;
@@ -221,18 +216,20 @@ color: white;
     margin: 0 0 0 150px;
     position: relative;
     display: inline-block;
-    margin-top: 50px; /* Altera a margem superior */
+    margin-top: 50px;
+    /* Altera a margem superior */
 }
 
 #productImage4 {
     margin-top: -145px;
     width: 300px; /* Altera a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;/* Mantém a proporção da imagem */
 }
 
-.change-btn4, .buy-btn4{
-    font-family: demos; /* Define a fonte do título */
-    display: block; /* Torna os botões em blocos */
+.change-btn4,
+.buy-btn4 {
+    font-family: demos;/* Define a fonte do título */
+    display: block;/* Torna os botões em blocos */
     margin: 10px auto; /* Centraliza os botões */
     padding: 10px 20px; /* Adiciona padding aos botões */
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
@@ -245,20 +242,22 @@ color: white;
     margin: 0 0 0 150px;
     position: relative;
     display: inline-block;
-    margin-top: 50px; /* Altera a margem superior */
+    margin-top: 50px;
+    /* Altera a margem superior */
 }
 
 #productImage5 {
     margin-top: -145px;
     width: 300px; /* Altera a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;/* Mantém a proporção da imagem */
 }
 
-.change-btn5, .buy-btn5{
-    font-family: demos; /* Define a fonte do título */
-    display: block; /* Torna os botões em blocos */
+.change-btn5,
+.buy-btn5 {
+    font-family: demos;/* Define a fonte do título */
+    display: block;/* Torna os botões em blocos */
     margin: 10px auto; /* Centraliza os botões */
-    padding: 10px 20px; /* Adiciona padding aos botões */
+    padding: 10px 20px;/* Adiciona padding aos botões */
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
     border: none;
     border-radius: 5px;
@@ -270,20 +269,22 @@ color: white;
     margin: 0 0 0 150px;
     position: relative;
     display: inline-block;
-    margin-top: 50px; /* Altera a margem superior */
+    margin-top: 50px;
+    /* Altera a margem superior */
 }
 
 #productImage6 {
     margin-top: -145px;
-    width: 300px; /* Altera a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 300px;/* Altera a largura da imagem */
+    height: auto;/* Mantém a proporção da imagem */
 }
 
-.change-btn6, .buy-btn6{
-    font-family: demos; /* Define a fonte do título */
-    display: block; /* Torna os botões em blocos */
-    margin: 10px auto; /* Centraliza os botões */
-    padding: 10px 20px; /* Adiciona padding aos botões */
+.change-btn6,
+.buy-btn6 {
+    font-family: demos;/* Define a fonte do título */
+    display: block;/* Torna os botões em blocos */
+    margin: 10px auto;/* Centraliza os botões */
+    padding: 10px 20px;/* Adiciona padding aos botões */
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
     border: none;
     border-radius: 5px;
@@ -292,24 +293,26 @@ color: white;
 
 /* ------------------ Estilos para a seta de navegação ------------------ */
 .arrow {
-    position: absolute; /* Posição absoluta */
-    top: 45%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Corrige o deslocamento vertical */
-    width: 30px; /* Largura */
-    height: 30px; /* Altura */
+    position: absolute;/* Posição absoluta */
+    top: 45%;/* Centraliza verticalmente */
+    transform: translateY(-50%);/* Corrige o deslocamento vertical */
+    width: 30px;/* Largura */
+    height: 30px;/* Altura */
     background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo com transparência */
-    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Gradiente linear */
-    text-align: center; /* Centraliza o conteúdo horizontalmente */
-    line-height: 30px; /* Centraliza o conteúdo verticalmente */
-    cursor: pointer; /* Altera o cursor para indicar interatividade */
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);/* Gradiente linear */
+    text-align: center;/* Centraliza o conteúdo horizontalmente */
+    line-height: 30px;/* Centraliza o conteúdo verticalmente */
+    cursor: pointer;/* Altera o cursor para indicar interatividade */
 }
 
 .arrow.left {
-    left: -30px; /* Posiciona à esquerda da área pai */
+    left: -30px;
+    /* Posiciona à esquerda da área pai */
 }
 
 .arrow.right {
-    right: -30px; /* Posiciona à direita da área pai */
+    right: -30px;
+    /* Posiciona à direita da área pai */
 }
 
 
@@ -318,47 +321,43 @@ color: white;
 
 
 
- /*---------------------- Estilização do fim da Pagina ---------------------- */
+/*---------------------- Estilização do fim da Pagina ---------------------- */
 footer {
-    font-family: demos; /* Define a fonte do título */
+    font-family: demos;/* Define a fonte do título */
     background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%); /* Gradiente linear */
     text-align: center;
     margin: auto;
-    height: 80px; /* Defina a altura desejada aqui */
-    padding: 20px; /* Adiciona preenchimento interno para aumentar o espaço ao redor do conteúdo */
+    height: 80px;/* Defina a altura desejada aqui */
+    padding: 20px;/* Adiciona preenchimento interno para aumentar o espaço ao redor do conteúdo */
 }
 
-.iconegit img{
+.iconegit img {
     position: absolute; /* Posição absoluta */
-    left: 0; /* Alinhado à esquerda */
-    right: 55px; /* Distância à direita */
-    margin: 0 auto; /* Margem automática */
+    left: 0;/* Alinhado à esquerda */
+    right: 55px;/* Distância à direita */
+    margin: 0 auto;/* Margem automática */
     width: 25px;
     margin-top: -70px;
     left: 1500px;
 }
 
 
-.iconelinkedin img{
-    position: absolute; /* Posição absoluta */
-    left: 0; /* Alinhado à esquerda */
-    right: 55px; /* Distância à direita */
-    margin: 0 auto; /* Margem automática */
+.iconelinkedin img {
+    position: absolute;/* Posição absoluta */
+    left: 0;/* Alinhado à esquerda */
+    right: 55px;/* Distância à direita */
+    margin: 0 auto;/* Margem automática */
     width: 25px;
     margin-top: -70px;
     left: 1400px;
 }
 
-.iconeinstagram img{
+.iconeinstagram img {
     position: absolute; /* Posição absoluta */
-    left: 0; /* Alinhado à esquerda */
-    right: 55px; /* Distância à direita */
-    margin: 0 auto; /* Margem automática */
+    left: 0;/* Alinhado à esquerda */
+    right: 55px;/* Distância à direita */
+    margin: 0 auto;/* Margem automática */
     width: 39px;
     margin-top: -69px;
     left: 1300px;
 }
-
-
-
-
