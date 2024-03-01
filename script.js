@@ -22,7 +22,7 @@ function startSlider() {
   images.style.transform = `translateX(-${currentSlide * 450}px)`;
 
   // Verifica se chegou ao final das imagens
-  if (currentSlide === imageCount.length - 1) {
+  if (currentSlide === imageCount.length - 5) {
     // Se estiver no final, reinicia o slider definindo currentSlide como 0
     currentSlide = 0;
   } else {

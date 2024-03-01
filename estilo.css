@@ -1,12 +1,13 @@
 /* ---------------------- Estilos para o corpo da página ---------------------- */
 body {
-    margin:auto; /* Define uma margem negativa */
+    margin: 0; /* Define uma margem negativa */
     padding: 0%; /* Sem preenchimento */
     border: 0; /* Sem borda */
     line-height: 5; /* Altura da linha */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte */
     background-color: #000;
 }
+
 
 /* --------------------- Estilos para o cabeçalho fixo ---------------------- */
 header {
@@ -114,7 +115,7 @@ h1 {
     font-size: 68px; /* Define o tamanho da fonte do título */
     letter-spacing: 0.65px; /* Define o espaçamento entre as letras do título */
     line-height: 200%; /* Define a altura da linha como 200% para melhor legibilidade */
-    margin-left: 625px;
+    margin-left: 750px;
     margin-bottom: -35px;
 }
 
@@ -134,10 +135,11 @@ ul {
 
 .slider {
     width: 450px; /* Define a largura do slider */
-    height: 400px; /* Define a altura do slider */
+    height: 500px; /* Define a altura do slider */
     overflow:hidden;
     border-radius: 3px; /* Adiciona bordas arredondadas ao slider */
-    margin-left: 500px; /* Define uma margem à esquerda */
+    margin-left: 650px; /* Define uma margem à esquerda */
+    margin-top: 25px;
 }
 
 .image1 {
@@ -157,25 +159,6 @@ ul {
     height: 300px; /* Define a altura da imagem */
     border-radius: 3px; /* Adiciona bordas arredondadas à imagem */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

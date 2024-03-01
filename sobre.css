@@ -1,0 +1,95 @@
+/* ---------------------- Estilos para o corpo da página ---------------------- */
+body {
+    margin:auto; /* Define uma margem negativa */
+    padding: 0%; /* Sem preenchimento */
+    border: 0; /* Sem borda */
+    line-height: 5; /* Altura da linha */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte */
+    background-color: #000;
+}
+
+
+header {
+    background-color: black; /* Cor de fundo preto */
+    position: fixed; /* Posição fixa */
+    top: 0; /* Fixado no topo */
+    width: 100%; /* Largura um pouco maior que a tela para evitar lacunas */
+    height: 125px; /* Altura fixa */
+    z-index: 100; /* Sobreposição */
+}
+/* --------------------- Estilos para o logotipo ---------------------------- */
+.logo {
+    position: absolute; /* Posição absoluta */
+    left: 0; /* Alinhado à esquerda */
+    right: 55px; /* Distância à direita */
+    margin: 0 auto; /* Margem automática */
+    transition: all 0.3s linear; /* Transição suave */
+    width: 200px; /* Largura fixa */
+    top: 0px; /* Alinhado ao topo */
+}
+
+/* ------------------ Estilos para a imagem do logotipo ---------------------- */
+header .logo img {
+    transition: all 0.3s linear; /* Transição suave */
+    max-width: 100%; /* Largura máxima */
+}
+
+/* ------------------ Estilização dos links de navegação --------------------- */
+/* Estilos para a navegação */
+header nav {
+    display: flex; /* Exibição flexível */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    margin-top: 28px; /* Margem superior */
+    transition: all 0.3s linear; /* Transição suave */
+}
+
+nav a {
+    text-transform: uppercase; /* Transformação em maiúsculas */
+    color: #C5B58C; /* Cor do texto */
+    font-weight: bold; /* Peso da fonte em negrito */
+    font-size: 16px; /* Tamanho da fonte */
+    text-decoration: none; /* Sem decoração de texto */
+}
+
+/* Estilos para o grupo de navegação à esquerda */
+header nav .navGrupo.navEsquerda {
+    justify-content: flex-start; /* Alinhamento à esquerda */
+}
+
+/* Estilos para os grupos de navegação */
+header nav .navGrupo {
+    display: flex; /* Exibição flexível */
+}
+
+/* Estilos para os links específicos no grupo de navegação à esquerda */
+header nav .navGrupo.navEsquerda .home {
+    margin-left: 250px; /* Margem à esquerda */
+}
+
+header nav .navGrupo.navEsquerda .sobre {
+    margin-left: 100px; /* Margem à esquerda */
+}
+
+header nav .navGrupo.navEsquerda .discos {
+    margin-left: 100px; /* Margem à esquerda */
+}
+
+/* Estilos para o grupo de navegação à direita */
+header nav .navGrupo.navDireita {
+    justify-content: flex-start; /* Alinhamento à esquerda */
+}
+
+/* Estilos para os links específicos no grupo de navegação à direita */
+header nav .navGrupo.navDireita .noticias {
+    margin-right: 100px; /* Margem à direita */
+}
+
+header nav .navGrupo.navDireita .catalogo {
+    margin-right: 100px; /* Margem à direita */
+}
+
+header nav .navGrupo.navDireita .redes {
+    margin-right: 250px; /* Margem à direita */
+}
+
+
