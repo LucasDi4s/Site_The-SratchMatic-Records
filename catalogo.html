@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogo.css">
+    <title>Document</title>
+</head>
+<body>
+        <header>
+            <div>
+                <h3 class="logo"><img src="logo.png" alt="logo"></h3>
+                <nav>
+                    <div class="navEsquerda navGrupo">
+                        <div class="home">
+                            <a href="index.html">Home</a>
+                        </div>
+                        <div class="sobre">
+                            <a href="sobre.html">sobre</a>
+                        </div>
+                        <div class="discos">
+                            <a href="disco.html">Discos</a>
+                        </div>
+                    </div>
+                    <div class="navDireita navGrupo">
+                        <div class="noticias">
+                            <a href="noticias.html">Noticias</a>
+                        </div>
+                        <div class="catalogo">
+                            <a href="catalogo.html">catálogo</a>
+                        </div>
+                        <div class="redes">
+                            <a href="rede.html">Redes Sociais</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    <div>
+        <p class="titulo"><b>Encomendas</b></p>
+    </div>
+    <table> <!-- Adiciona bordas à tabela para visualização -->
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Valor Unitário</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cliente">
+                <td class="nome">Lucas</td>
+                <td class="produto">Disco wutang</td>
+                <td class="quantidade">1</td>
+                <td class="valor-unitario">120</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Pedrão</td>
+                <td class="produto">Camisa do Ajax GG</td>
+                <td class="quantidade">2</td>
+                <td class="valor-unitario">-120</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Matheus</td>
+                <td class="produto">Camisa do Japão GG</td>
+                <td class="quantidade">3</td>
+                <td class="valor-unitario">120</td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cliente">
+                <td class="nome">Negueba</td>
+                <td class="produto">Camisa do Lakers GG</td>
+                <td class="quantidade">-4</td>
+                <td class="valor-unitario">150</td>
+                <td class="total"></td>
+            </tr>
+            
+        </tbody>
+
+    </table>
+    <script src="calculatotal.js"></script>
+</body>
+</html>
