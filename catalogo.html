@@ -1,46 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="catalogo.css">
-    <title>Document</title>
+    <script src="calculatotal.js"></script>
+
+
+    <title>Encomendas</title>
 </head>
+
 <body>
-        <header>
-            <div>
-                <h3 class="logo"><img src="logo.png" alt="logo"></h3>
-                <nav>
-                    <div class="navEsquerda navGrupo">
-                        <div class="home">
-                            <a href="index.html">Home</a>
-                        </div>
-                        <div class="sobre">
-                            <a href="sobre.html">sobre</a>
-                        </div>
-                        <div class="discos">
-                            <a href="disco.html">Discos</a>
-                        </div>
+    <header>
+        <div>
+            <h3 class="logo"><img src="logo.png" alt="logo"></h3>
+            <nav>
+                <div class="navEsquerda navGrupo">
+                    <div class="home">
+                        <a href="index.html">Home</a>
                     </div>
-                    <div class="navDireita navGrupo">
-                        <div class="noticias">
-                            <a href="noticias.html">Noticias</a>
-                        </div>
-                        <div class="catalogo">
-                            <a href="catalogo.html">catálogo</a>
-                        </div>
-                        <div class="redes">
-                            <a href="rede.html">Redes</a>
-                        </div>
+                    <div class="sobre">
+                        <a href="sobre.html">sobre</a>
                     </div>
-                </nav>
-            </div>
-        </header>
-    <div>
-        <p class="titulo"><b>Encomendas</b></p>
-    </div>
-    <table> <!-- Adiciona bordas à tabela para visualização -->
+                    <div class="discos">
+                        <a href="disco.html">Discos</a>
+                    </div>
+                </div>
+                <div class="navDireita navGrupo">
+                    <div class="noticias">
+                        <a href="noticias.html">Noticias</a>
+                    </div>
+                    <div class="catalogo">
+                        <a href="catalogo.html">catálogo</a>
+                    </div>
+                    <div class="redes">
+                        <a href="rede.html">Redes</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div >
+    <form>
+        <fieldset class="box">
+            <legend class="tituloB">Adicionar Encomendas</legend>
+
+         <div class="Nome">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome"><br>
+        </div>
+
+        <div class="produtos">
+            <label for="produtos">Produto:</label>
+            <select name="discos" id="discos">
+                <option value="LP Wu tnag">LP Wu tang</option>
+                <option value="LP Racionais">LP Racionais</option>
+                <option value="LP Public enemy">LP Public Enemy</option>
+                <option value="LP urban">LP Urban</option>
+            </select><br>
+        </div>
+
+        <div class="Qtde">
+            <label for="Qtde">Quatidade:</label>
+            <input type="number" id="Qtde"> <br>
+        </div>
+
+        <div class="unitario">
+            <label for="unitario">R$ Unitario</label>
+            <input type="text" id= "unitario">
+        </div>
+
+        <div class="btn_adiciona">
+            <button id="btn_adiciona"  type="button" onclick ="adicionarNaTabela()">Adicinar</button>
+
+        </div>
+
+        </fieldset>
+    </form>
+</div>
+    <table id="tabela"> <!-- Adiciona bordas à tabela para visualização -->
         <thead>
             <tr>
                 <th>Nome</th>
@@ -67,7 +108,7 @@
             </tr>
             <tr class="cliente">
                 <td class="nome">Matheus</td>
-                <td class="produto">LP DELUXE wu tang clan</td>
+                <td class="produto">LP wu-tang clan</td>
                 <td class="quantidade">3</td>
                 <td class="valor-unitario">100</td>
                 <td class="total"></td>
@@ -79,10 +120,7 @@
                 <td class="valor-unitario">32</td>
                 <td class="total"></td>
             </tr>
-            
         </tbody>
-
     </table>
-    <script src="calculatotal.js"></script>
 </body>
 </html>

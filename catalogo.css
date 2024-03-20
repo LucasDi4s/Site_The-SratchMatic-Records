@@ -4,7 +4,7 @@ body {
     padding: 0;/* Sem preenchimento */
     line-height: 5; /* Altura da linha */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte */
-    background-color: #000;
+    background-color: #000000;
 }
 
 /* --------------------- Estilos para o cabeçalho fixo ---------------------- */
@@ -93,35 +93,129 @@ header nav .navGrupo.navDireita .redes {
     margin-right: 100%; /* Margem à direita */
 }
 
-.titulo {
-    font-size: 30px;
-    padding-left: 140px;
-}
+/* ------------------ Estilos A tabela de Produtos ---------------------- */
 
+/* Define estilos para a linha horizontal */
 hr {
-    width: 85%;/* Define a largura da linha para 50% da largura do contêiner */
-    height: 5px;/* Define a altura da linha */
-    background-color: rgb(255, 255, 255);/* Cor da linha */
-    border: none;/* Remove a borda padrão */
-    margin-top: -16px;
-   
+    width: 85%; /* Define a largura da linha para 85% da largura do contêiner */
+    height: 5px; /* Define a altura da linha */
+    background-color: rgb(255, 255, 255); /* Cor da linha */
+    border: none; /* Remove a borda padrão */
 }
 
+/* Estilos para a tabela */
 table {
-    width: 85%;
-    margin: 20px auto;
-    margin-bottom: 800px;
-    border: 1px solid rgb(194, 151, 32);
-    border-spacing: 0;
-    background-color: aliceblue;
+    width: 85%; /* Define a largura da tabela */
+    margin: 5px auto; /* Centraliza a tabela horizontalmente com margens superior e inferior de 5px */
+    margin-bottom: 5%; /* Adiciona margem inferior de 5% */
+    border: 1px solid rgb(194, 151, 32); /* Adiciona borda de 1px sólida com cor específica */
+    border-spacing: 0; /* Remove o espaçamento entre as células da tabela */
+    background-color: rgb(255, 255, 255); /* Cor de fundo da tabela */
 }
+
+/* Estilos para os cabeçalhos da tabela */
 th {
-    background-color: rgb(194, 151, 32);
-    border: 1px solid rgb(194, 151, 32);
+    background-color: rgb(194, 151, 32); /* Define a cor de fundo dos cabeçalhos da tabela */
+    border: 1px solid rgb(194, 151, 32); /* Adiciona borda de 1px sólida com cor específica */
 }
+
+/* Estilos para as células da tabela */
 td {
     text-align: center; /* Centraliza o conteúdo das células */
-    padding: 7px;
-    color: rgb(0, 0, 0);
-    border: 1px solid rgb(194, 151, 32);
+    padding: 7px; /* Adiciona espaçamento interno de 7px */
+    color: rgb(0, 0, 0); /* Define a cor do texto */
+    border: 1px solid rgb(194, 151, 32); /* Adiciona borda de 1px sólida com cor específica */
+}
+
+/* ------------------ Estilos para O Formulário de pedidos ---------------------- */
+
+/* Define estilos para a caixa de formulário */
+.box {
+    margin: 20%; /* Define as margens da caixa de formulário */
+    margin-bottom: 5%; /* Adiciona margem inferior de 5% */
+    margin-top: 10%; /* Adiciona margem superior de 10% */
+}
+
+/* Define estilos para o título do formulário */
+.tituloB {
+    font-size: 200%; /* Define o tamanho da fonte */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: #C5B58C; /* Define a cor do texto */
+}
+
+/* Define estilos para o rótulo "Nome" */
+.Nome {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 5%; /* Adiciona margem superior de 5% */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: white; /* Define a cor do texto */
+}
+
+/* Define estilos para o rótulo "Produto" */
+.produtos {
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: white; /* Define a cor do texto */
+}
+
+/* Define estilos para o rótulo "Quantidade" */
+.Qtde {
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: white; /* Define a cor do texto */
+}
+.unitario{
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Define o peso da fonte como negrito */
+    color: white; /* Define a cor do texto */ 
+}
+
+
+/* Estilos para o campo de nome */
+#nome {
+    width: 25%; /* Define o tamanho do campo de entrada */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+    border: 1px solid #ccc; /* Adiciona borda de 1px sólida com cor específica */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    padding: 5px; /* Adiciona espaçamento interno de 5px */
+}
+
+/* Estilos para o menu suspenso de seleção de produto */
+#discos {
+    width: 25%; /* Define o tamanho do menu suspenso */
+    font-size: 14px; /* Define o tamanho da fonte */
+    color: #555; /* Define a cor do texto */
+    border: 1px solid #ccc; /* Adiciona borda de 1px sólida com cor específica */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    padding: 5px; /* Adiciona espaçamento interno de 5px */
+}
+
+/* Estilos para o campo de quantidade */
+#Qtde {
+    width: 25%; /* Define o tamanho do campo de entrada */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+    border: 1px solid #ccc; /* Adiciona borda de 1px sólida com cor específica */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    padding: 5px; /* Adiciona espaçamento interno de 5px */
+}
+#unitario{
+    width: 25%; /* Define o tamanho do campo de entrada */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #333; /* Define a cor do texto */
+    border: 1px solid #ccc; /* Adiciona borda de 1px sólida com cor específica */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    padding: 5px; /* Adiciona espaçamento interno de 5px */
+
+}
+
+
+
+
+
+
+/* Estilos para o botão de adicionar */
+#btn_adiciona {
+    font-weight: bold; /* Define o peso da fonte como negrito */
 }
