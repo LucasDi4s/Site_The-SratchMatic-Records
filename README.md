@@ -10,7 +10,7 @@ O objetivo do projeto foi criar ima interface de um site de vendas de discos de 
 
 # Layout do projeto 
 
-
+![imgsite](https://github.com/LucasDi4s/Site_The-SratchMatic-Records/blob/main/imgsite.PNG)
 
 <br>
 
