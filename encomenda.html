@@ -1,0 +1,148 @@
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="encomeda.css">
+	<script src="https://kit.fontawesome.com/73d3ffb9b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<header>
+		<div class="logo">
+			<img src="logo.png" alt="logo" width="500">
+		</div>
+		<nav class="menu">
+			<div class="nav-list">
+				<ul class="list-group">
+					<li class="list-items"><a href="index.html">Home</a></li>
+					<li class="list-items"><a href="Sobre.html">Sobre</a></li>
+					<li class="list-items"><a href="Produtos.html">Produtos</a></li>
+					<li class="list-items"><a href="encomenda.html">Encomendas</a></li>
+				</ul>
+
+				<div class="burger">
+					<div class="linha1"></div>
+					<div class="linha2"></div>
+					<div class="linha3"></div>
+				</div>
+				<script src="burger.js"></script>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="container">
+			<h2 class="titulo">Encomendas</h2>
+			<label for="filtrar-tabela">Filtrar</label>
+			<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente">
+			<table>
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>Produto</th>
+						<th>Quantidade</th>
+						<th>Valor Unitário</th>
+						<th>Total</th>
+					</tr>
+				</thead>
+				<tbody id="tabela-clientes">
+					<tr class="cliente">
+						<td class="info-nome">Lucas Dias</td>
+						<td class="info-produto">Disco racionais</td>
+						<td class="info-qtde">L</td>
+						<td class="info-valor">30</td>
+						<td class="info-total">-</td>
+					</tr>
+					<tr class="cliente">
+						<td class="info-nome">Eryca de Oliveira</td>
+						<td class="info-produto">CD cbjr</td>
+						<td class="info-qtde">2</td>
+						<td class="info-valor">50</td>
+						<td class="info-total">-</td>
+					</tr>
+					<tr class="cliente">
+						<td class="info-nome">Mariana</td>
+						<td class="info-produto">Disco wu-tang clan</td>
+						<td class="info-qtde">3</td>
+						<td class="info-valor">25</td>
+						<td class="info-total">-</td>
+					</tr>
+					<tr class="cliente">
+						<td class="info-nome">Lauren marilia</td>
+						<td class="info-produto">LP Deluxe JB PURPOSE</td>
+						<td class="info-qtde">2</td>
+						<td class="info-valor">25</td>
+						<td class="info-total">-</td>
+					</tr>
+				</tbody>
+			</table>
+			<button id="buscar-encomendas" class="botao">Buscar Encomendas</button>
+
+			<!--Formulário de inclusão de encomendas -->
+			<h2 id="titulo-form">Adicionar nova encomenda</h2>
+			<!--Exibe os erros de validação do formulário-->
+			<ul id="mensagens-erro"></ul>
+			<form id="form-adiciona">
+				<div class="grupo">
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" placeholder="Digite o nome do(a) cliente" class="campo"
+						required>
+				</div>
+				<div class="grupo">
+					<label for="qtde">Qtde:</label>
+					<input type="number" id="qtde" name="qtde" placeholder="Digite a quantidade encomendada"
+						class="campo campo-medio" required>
+				</div>
+				<div class="grupo">
+					<label for="produto">Produto:</label>
+					<select id="produto" name="produto" class="campo campo-medio">
+						<option value="">Selecione</option>
+						<option>Dico Wu-tang clan</option>
+						<option>Disco Racionais</option>
+						<option>CD CBJR</option>
+						<option>Disco Public Enemys</option>
+						<option>CD Sabotage</option>
+					</select>
+				</div>
+				<div class="grupo">
+					<label for="unitario">R$ Unitário:</label>
+					<input type="number" id="unitario" name="unitario" placeholder="Digite o valor unitário do produto"
+						class="campo campo-medio" required>
+				</div>
+				<!-- <button id="adicionar-encomenda" class="botao bto-principal">Adicionar</button> -->
+				<input type="submit" id="adicionar-encomenda" class="botao bto-principal">
+			</form>
+		</section>
+	</main>
+	<script src="calcula-total.js"></script>
+	<script src="form.js"></script>
+	<script src="remover-encomenda.js"></script>
+	<script src="filtrar.js"></script>
+	<script src="buscar-encomendas.js"></script>
+
+	<footer>
+        <div class="fim_texto">
+            <p>ScratchMatic Records &copy; 2024. Todos os direitos reservados.</p>
+            <ul class="lista_icones">
+                <li><a href="https://www.linkedin.com/in/lucasdias13/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li><a href="https://github.com/LucasDi4s">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li><a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=new">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

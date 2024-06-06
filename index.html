@@ -1,75 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Scratchmatic Records™</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="icon" href="icone.ico" type="image/x-icon">
-
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/73d3ffb9b4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
-
 <body>
     <header>
-        <div>
-            <h3 class="logo"><img src="logo.png" alt="logo"></h3>
-            <nav>
-                <div class="navEsquerda navGrupo">
-                    <div class="home">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="sobre">
-                        <a href="sobre.html">sobre</a>
-                    </div>
-                    <div class="discos">
-                        <a href="disco.html">Discos</a>
-                    </div>
-                </div>
-                <div class="navDireita navGrupo">
-                    <div class="noticias">
-                        <a href="noticias.html">Noticias</a>
-                    </div>
-                    <div class="catalogo">
-                        <a href="catalogo.html">catálogo</a>
-                    </div>
-                    <div class="redes">
-                        <a href="rede.html">Redes</a>
-                    </div>
-                </div>
-            </nav>
+        <div class="logo">
+            <img src="logo.png" alt="logo" width="500">
         </div>
+        <nav class="menu">
+            <div class="nav-list">
+                <ul class="list-group">
+                    <li class="list-items"><a href="index.html">Home</a></li>
+                    <li class="list-items"><a href="Sobre.html">Sobre</a></li>
+                    <li class="list-items"><a href="Produtos.html">Produtos</a></li>
+                    <li class="list-items"><a href="encomenda.html">Encomendas</a></li>
+                </ul>
+
+                <div class="burger">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+                <script src="burger.js"></script>
+            </div>
+        </nav>
     </header>
 
-    <section class="banner">
-        <h1 class="gradient">𝖜𝖊𝖑𝖈𝖔𝖒𝖊</h1>
+    <section>
+        <h1 class="TextoInicio">welcome</h1>
     </section>
 
     <div class="slider">
-        <ul>
-            <li><img class="image1" src="spaceRap1.jpeg" alt="image one" /></li>
-            <li><img class="image2" src="urban1.jpeg" alt="image two" /></li>
-            <li><img class="image3" src="wu-tang1.jpeg" alt="image three" /></li>
+        <ul class="passa">
+            <li><img class="imagem1" src="wu-tang1.jpeg" alt="imagem1"></li>
+            <li><img class="imagem3" src="racionais1.jpeg" alt="imagem3"></li>
+            <li><img class="imagem2" src="enemy1.jpeg" alt="imagem2"></li>
         </ul>
     </div>
-    <script src="script.js"></script>
+    <script src="carrosel.js"></script>
 
     <footer>
-        <div class="copyright">
-            <p> ScratchMatic Records &copy; 2024. Todos os direitos reservados.</p> <!-- Texto de direitos autorais -->
+        <div class="fim_texto">
+            <p>ScratchMatic Records &copy; 2024. Todos os direitos reservados.</p>
+            <ul class="lista_icones">
+                <li><a href="https://www.linkedin.com/in/lucasdias13/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+                <li><a href="https://github.com/LucasDi4s">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li><a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=new">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <div class="iconegit">
-            <a href=" https://github.com/LucasDi4s"><img src="github.png" alt="github"></a>
-        </div>
-        <div class="iconelinkedin">
-            <a href="https://www.linkedin.com/in/lucasdias13/"><img src="linkedin.png" alt="linkedin"></a>
-        </div>
-        <div class="iconeinstagram">
-            <a href="https://www.instagram.com/x_slimjamal?igsh=NHRhdzRvdjEzb25k"><img src="instagram.png"
-                    alt="instagram"></a>
-        </div>
+        
+        <!-- Controle de áudio no rodapé -->
+        <audio autoplay controls id="audioPlayer">
+            <source src="/api/play/JE%20-%20Bola%20outro.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
     </footer>
-
+    <script src="/api_radio/api_radio/server.js"></script>
 </body>
-
 </html>

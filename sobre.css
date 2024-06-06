@@ -1,122 +1,181 @@
-/* ---------------------- Estilos para o corpo da página ---------------------- */
 body {
-    margin: 0; /* Define uma margem negativa */
-    padding: 0;/* Sem preenchimento */
-    line-height: 5; /* Altura da linha */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte */
-    background-color: #000;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(156, 164, 167);
 }
 
-/* --------------------- Estilos para o cabeçalho fixo ---------------------- */
-header {
-    background-color: rgb(0, 0, 0);/* Cor de fundo preto */
-    position: fixed;/* Posição fixa */
-    top: 0;/* Fixado no topo */
-    width: 100%;/* Largura um pouco maior que a tela para evitar lacunas */
-    height: 15%;/* Altura fixa */
-    z-index: 100;/* Sobreposição */
-}
 
-/* --------------------- Estilos para o logotipo ---------------------------- */
 .logo {
-    position: absolute;/* Posição absoluta */
-    left: 0;/* Alinhado à esquerda */
-    right: 1%;/* Distância à direita */
-    margin: 0 auto; /* Margem automática */
-    transition: all 0.3s linear;/* Transição suave */
-    width: 13%;/* Largura fixa */
-    top: 5%;/* Alinhado ao topo */
+    display: flex;
+    align-items: center;
 }
 
-/* ------------------ Estilos para a imagem do logotipo ---------------------- */
-header .logo img {
-    transition: all 0.3s linear; /* Transição suave */
-    max-width: 100%; /* Largura máxima */
+.logo img {
+    display: flex;
+    width: 35%;
 }
 
-/* ------------------ Estilização dos links de navegação --------------------- */
-/* Estilos para a navegação */
-header nav {
-    display: flex;/* Exibição flexível */
-    justify-content: space-between;/* Espaçamento entre os itens */
-    margin-top: 28px;/* Margem superior */
-    transition: all 0.3s linear;/* Transição suave */
+header {
+    display: flex;
+    background-color: rgb(5, 117, 161);
 }
 
-nav a {
-    text-transform: uppercase;/* Transformação em maiúsculas */
-    color: #C5B58C;/* Cor do texto */
-    font-weight: bold;/* Peso da fonte em negrito */
-    font-size: 16px;/* Tamanho da fonte */
-    text-decoration: none;/* Sem decoração de texto */
+.menu {
+    display: flex;
+    margin: 3vh 2vw;
+    justify-content: space-between;
 }
 
-/* Estilos para o grupo de navegação à esquerda */
-header nav .navGrupo.navEsquerda {
-    justify-content: flex-start;/* Alinhamento à esquerda */
+.nav-list {
+    display: flex;
+    align-items: center;
+
 }
 
-/* Estilos para os grupos de navegação */
-header nav .navGrupo {
-    display: flex;/* Exibição flexível */
+.nav-list ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
-/* Estilos para os links específicos no grupo de navegação à esquerda */
-header nav .navGrupo.navEsquerda .home {
-    margin-left: 150%;/* Margem à esquerda */
+.list-items {
+    margin: 0 1.5vw;
 }
 
-header nav .navGrupo.navEsquerda .sobre {
-    margin-left: 50%;/* Margem à esquerda */
+.list-group a {
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 1vh;
 }
 
-header nav .navGrupo.navEsquerda .discos {
-    margin-left: 50%;/* Margem à esquerda */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:780px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .list-group {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        /*Arrumando o texto dentro hambuguer*/
+        background-color: #0e0f13;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        /*Ajeitando a transição parar abrir o menu hambuguer*/
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .list-group li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .list-group {
+        font-size: 100%;
+        border-bottom: 1% solid white;
+        padding-top: 5%;
+    }
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+/*Animações quando se clica no menu hamburguer*/
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/*Transformando o menu em X*/
+.toggle .linha1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .linha2 {
+    opacity: 0;
+
+}
+
+.toggle .linha3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 780px) {
+    .list-group.nav-active li {
+        opacity: 1;
+    }
 }
 
 
-/* Estilos para o grupo de navegação à direita */
-header nav .navGrupo.navDireita {
-    justify-content: flex-end;/* Alinhamento à esquerda */
+.titulo{
+    font-size: 200%;
+text-align: center;
+color: #030303;
+margin-top: 10%;
 }
 
-/* Estilos para os links específicos no grupo de navegação à direita */
-header nav .navGrupo.navDireita .noticias {
-    margin-right: 35%;/* Margem à direita */
-}
-
-header nav .navGrupo.navDireita .catalogo {
-    margin-right: 35%;/* Margem à direita */
-}
-
-header nav .navGrupo.navDireita .redes {
-    margin-right: 100%; /* Margem à direita */
-}
-
-
-.texto_banner{
-    font-family: demos; /* Define a fonte do título */
-    font-size: 50px; /* Define o tamanho da fonte do título */
-    letter-spacing: 0.65px;/* Define o espaçamento entre as letras do título */
-    line-height: 200%;/* Define a altura da linha como 200% para melhor legibilidade */
-    margin-top: 10%; /* Define a margem superior */
-    text-align: center;
-    margin: 15%;
-}
-
-/* ------------------ Estilos para a gradiente de Titulo ------------------ */
-.gradient {
-    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);/* Define um gradiente linear */
-    -webkit-text-fill-color: transparent;/* Faz com que o texto seja transparente para que o gradiente seja visível */
-    background-clip: text;
-}
-
-.texto{
-    color: white;
+.texto_sobre {
+    font-size: 125%;
+    color: rgb(0, 0, 0);
     margin: 25%;
-    margin-top: -8%;
-    text-align:left;
-    font-size: 100%; /* Define o tamanho da fonte do título */
-    letter-spacing: 0.65px;/* Define o espaçamento entre as letras do título */
-    line-height: 200%;/* Define a altura da linha como 200% para melhor legibilidade */
+    margin-top: 5%;
+    text-align: left;
 }
+
+
+footer{
+    background-color: rgb(5, 117, 161);
+    padding: 3px;
+}
+.fim_texto{
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.lista_icones{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 0 1vh 0;
+}
+.lista_icones li{
+    margin: 0 1vw;
+}
+.lista_icones a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+

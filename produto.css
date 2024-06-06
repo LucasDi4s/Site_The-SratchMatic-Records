@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: rgb(156, 164, 167);
+    align-content: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: flex;
+    width: 35%;
+}
+
+header {
+    display: flex;
+    background-color: rgb(5, 117, 161);
+}
+
+.menu {
+    display: flex;
+    margin: 3vh 2vw;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.list-items {
+    margin: 0 1.5vw;
+}
+
+.list-group a {
+    text-decoration: none;
+    font-size: 1.6vw;
+    color: #ffffff;
+    font-weight: 400;
+    margin: 1vh;
+    position: relative; /* Necessário para o pseudo-elemento ::after */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+.list-group a:hover {
+    color: #ffcc00; /* Cor do texto ao passar o mouse */
+}
+
+.list-group a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ffcc00; /* Cor do sublinhado */
+    transition: width 0.3s ease;
+    -webkit-transition: width 0.3s ease;
+}
+
+.list-group a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ffcc00;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 780px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .list-group {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        /* Arrumando o texto dentro do hambúrguer */
+        background-color: #0e0f13;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .list-group li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .list-group {
+        font-size: 100%;
+        border-bottom: 1% solid white;
+        padding-top: 5%;
+    }
+    .list-group a {
+        font-size: 3vw; /* Altere o valor conforme necessário */
+    }
+}
+
+.nav-active {
+    transform: translate(0%);
+}
+
+/* Animações quando se clica no menu hambúrguer */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+/* Transformando o menu em X */
+.toggle .linha1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .linha2 {
+    opacity: 0;
+}
+
+.toggle .linha3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (max-width: 780px) {
+    .list-group.nav-active li {
+        opacity: 1;
+    }
+}
+
+
+/* ------------------ Estilos para o Titulo ------------------ */
+h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-top: 150px; /* Reduzindo um pouco a margem superior */
+    text-align: center;
+    color: #333;
+}
+
+/* ------------------ Estilos para a gradiente de Titulo ------------------ */
+.gradient {
+    font-family: 'danfo';
+    color: white;
+}
+
+/* ------------------ Estilos para o produto ------------------ */
+.product {
+    margin: 0 auto; /* Centraliza os produtos horizontalmente */
+    width: calc(33.33% - 20px); /* Define a largura dos produtos com base no tamanho da tela */
+    max-width: 300px; /* Define a largura máxima dos produtos */
+    position: relative;
+    margin-top: 50px;
+    display: inline-block; /* Permite que os produtos fiquem lado a lado */
+    vertical-align: top; /* Alinha os produtos no topo */
+    text-align: center; /* Centraliza o conteúdo dentro dos produtos */
+}
+
+.product img {
+    max-width: 100%; /* Garante que a imagem do produto não ultrapasse a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-bottom: 15px; /* Adiciona um espaço entre a imagem e os botões */
+}
+
+.change-btn,
+.buy-btn {
+    font-family: demos;
+    display: inline-block; /* Alterado para inline-block para que os botões fiquem na mesma linha */
+    margin: 10px; /* Espaçamento uniforme entre os botões */
+    padding: 10px 20px;
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ------------------ Estilos para os produtos adicionais ------------------ */
+
+.product
+ {
+    margin: 50px auto; /* Aumenta o espaçamento entre as fileiras */
+    max-width: 300px; /* Define a largura máxima dos produtos */
+    position: relative;
+    display: inline-block; /* Permite que os produtos fiquem lado a lado */
+    vertical-align: top; /* Alinha os produtos no topo */
+    text-align: center; /* Centraliza o conteúdo dentro dos produtos */
+    margin-left: 5%;
+}
+.product2
+ {
+    margin: 50px auto; /* Aumenta o espaçamento entre as fileiras */
+    max-width: 300px; /* Define a largura máxima dos produtos */
+    position: relative;
+    display: inline-block; /* Permite que os produtos fiquem lado a lado */
+    vertical-align: top; /* Alinha os produtos no topo */
+    text-align: center; /* Centraliza o conteúdo dentro dos produtos */
+    margin-left: 15%;
+}
+.product3
+ {
+    margin: 50px auto; /* Aumenta o espaçamento entre as fileiras */
+    max-width: 300px; /* Define a largura máxima dos produtos */
+    position: relative;
+    display: inline-block; /* Permite que os produtos fiquem lado a lado */
+    vertical-align: top; /* Alinha os produtos no topo */
+    text-align: center; /* Centraliza o conteúdo dentro dos produtos */
+    margin-left: 18%;
+}
+.product4
+ {
+    margin: 50px auto; /* Aumenta o espaçamento entre as fileiras */
+    max-width: 300px; /* Define a largura máxima dos produtos */
+    position: relative;
+    display: inline-block; /* Permite que os produtos fiquem lado a lado */
+    vertical-align: top; /* Alinha os produtos no topo */
+    text-align: center; /* Centraliza o conteúdo dentro dos produtos */
+    margin-left: 5%;
+}
+.product5
+ {
+    margin: 50px auto; /* Aumenta o espaçamento entre as fileiras */
+    max-width: 300px; /* Define a largura máxima dos produtos */
+    position: relative;
+    display: inline-block; /* Permite que os produtos fiquem lado a lado */
+    vertical-align: top; /* Alinha os produtos no topo */
+    text-align: center; /* Centraliza o conteúdo dentro dos produtos */
+    margin-left: 15%;
+}
+.product6
+ {
+    margin: 50px auto; /* Aumenta o espaçamento entre as fileiras */
+    max-width: 300px; /* Define a largura máxima dos produtos */
+    position: relative;
+    display: inline-block; /* Permite que os produtos fiquem lado a lado */
+    vertical-align: top; /* Alinha os produtos no topo */
+    text-align: center; /* Centraliza o conteúdo dentro dos produtos */
+    margin-left: 18%;
+}
+
+.product2 img,
+.product3 img,
+.product4 img,
+.product5 img,
+.product6 img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.change-btn2,
+.change-btn3,
+.change-btn4,
+.change-btn5,
+.change-btn6,
+.buy-btn2,
+.buy-btn3,
+.buy-btn4,
+.buy-btn5,
+.buy-btn6 {
+    /* Mantém as mesmas regras de estilo dos botões (.change-btn, .buy-btn) */
+    font-family: demos;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ------------------ Estilos para a seta de navegação ------------------ */
+.arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #DEC489, #F6E084, #D1B372, #E3CC97, #BF9A53 100%);
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.arrow.left {
+    left: -30px;
+}
+
+.arrow.right {
+    right: -30px;
+}
+
+footer {
+    background-color: rgb(5, 117, 161);
+    padding: 3px;
+}
+
+.fim_texto {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.lista_icones {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh 0 1vh 0;
+}
+
+.lista_icones li {
+    margin: 0 1vw;
+}
+
+.lista_icones a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+

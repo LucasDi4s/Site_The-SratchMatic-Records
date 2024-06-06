@@ -4,52 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Scratchmatic Records</title>
     <link rel="stylesheet" href="sobre.css">
-    <link rel="icon" href="icone.ico" type="image/x-icon">
-
+    <script src="https://kit.fontawesome.com/73d3ffb9b4.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <h3 class="logo"><img src="logo.png" alt="logo"></h3>
-            <nav>
-                <div class="navEsquerda navGrupo">
-                    <div class="home">
-                        <a href="index.html">Home</a>
-                    </div>
-                    <div class="sobre">
-                        <a href="sobre.html">sobre</a>
-                    </div>
-                    <div class="discos">
-                        <a href="disco.html">Discos</a>
-                    </div>
-                </div>
-                <div class="navDireita navGrupo">
-                    <div class="noticias">
-                        <a href="noticias.html">Noticias</a>
-                    </div>
-                    <div class="catalogo">
-                        <a href="catalogo.html">catálogo</a>
-                    </div>
-                    <div class="redes">
-                        <a href="rede.html">Redes</a>
-                    </div>
-                </div>
-            </nav>
+        <div class="logo">
+            <img src="logo.png" alt="logo" width="500">
         </div>
+        <nav class="menu">
+            <div class="nav-list">
+                <ul class="list-group">
+                    <li class="list-items"><a href="index.html">Home</a></li>
+                    <li class="list-items"><a href="Sobre.html">Sobre</a></li>
+                    <li class="list-items"><a href="Produtos.html">Produtos</a></li>
+                    <li class="list-items"><a href="encomenda.html">Encomendas</a></li>
+                </ul>
+
+                <div class="burger">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                </div>
+                <script src="burger.js"></script>
+            </div>
+        </nav>
     </header>
 
-    <div class="texto_banner">
-        <h1 class="gradient">Scramathic Records</h1>
+
+    <div class="titulo">
+        <h1 class="texto_titulo">Scramathic Records</h1>
     </div>
 
-    <section class="texto">
-        <p >A iniciativa de desenvolver este site surgiu da necessidade de aplicar os conhecimentos adquiridos tanto em sala de aula como com estudos 
-            por conta. Este é o segundo site que desenvolvo e conta com a implementação de JavaScript para aumentar a complexidade do código e 
+
+    <div class="texto_sobre">
+        <p>A iniciativa de desenvolver este site surgiu da necessidade de aplicar os conhecimentos adquiridos tanto em
+            sala de aula como com estudos
+            por conta. Este é o segundo site que desenvolvo e conta com a implementação de JavaScript para aumentar a
+            complexidade do código e
             proporcionando uma experiência mais interativa ao usuários.</p>
-    </section>
+    </div>
+
+    
+    <footer>
+        <div class="fim_texto">
+            <p>ScratchMatic Records &copy; 2024. Todos os direitos reservados.</p>
+            <ul class="lista_icones">
+                <li><a href="https://www.linkedin.com/in/lucasdias13/">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li><a href="https://github.com/LucasDi4s">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+                <li><a href="https://mail.google.com/mail/u/1/?ogbl#inbox?compose=new">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+
 
 
 </body>

@@ -1,3 +1,4 @@
+
 var currentIndex = 1;
 
 function changeImage(indexChange) {
